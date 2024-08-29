@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 100vh; /* Takes full viewport height */
+  margin: 0;
+  background-image: url('/images/volunteering.jpg'); /* Set the background image */
+  background-size: cover; /* Scales the background image to cover the container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+  
+
+
+  
+  .footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .header {
+    position: absolute;
+    top: 7rem; /* Adjust top spacing as needed */
+    left: 2rem; /* Adjust left spacing as needed */
+    color: white;
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .subheader {
+    position: absolute;
+    top: 10.5rem; /* Adjust top spacing to position below the header */
+    left: 5rem; /* Align with the header text */
+    color: white;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(3, 54, 73, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it stays above other content */
+  }
+  
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Centering the navbar content */
+  }
+  
+  .navTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navLinks a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navLinks a:hover {
+    text-decoration: underline;
+  }
+
+/* Button Styles */
+.matchButton {
+    position: absolute; /* Ensure button is positioned relative to the container */
+    top: 14rem; /* Distance from the bottom */
+    left: 7rem; /* Distance from the left */
+    padding: 1rem 2rem;
+    background-color: #c27440b3;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .matchButton:hover {
+    background-color: #734B38;
+  }
