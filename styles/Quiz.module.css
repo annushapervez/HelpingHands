@@ -1,0 +1,75 @@
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-image: url('/images/quiz.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%; 
+  box-sizing: border-box; 
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  .header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .quizForm {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .optionButton {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .optionButton:hover {
+    background-color: #ddd;
+  }
+  
+  .selected {
+    background-color: #c27440b3;
+    color: white;
+    border-color: #c27440b3;
+  }
+  
+  .submitButton {
+    background-color: #c27440b3;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #734B38;
+  }
+  

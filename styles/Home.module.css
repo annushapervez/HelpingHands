@@ -1,94 +1,71 @@
 .container {
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
-  height: 100vh; /* Takes full viewport height */
-  margin: 0;
-  background-image: url('/images/volunteering.jpg'); /* Set the background image */
-  background-size: cover; /* Scales the background image to cover the container */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the background image from repeating */
-}
-  
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('/images/volunteering.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
   .footer {
     padding: 1rem;
     text-align: center;
   }
-
+  
   .header {
+    font-family: 'Playfair Display', serif;
     position: absolute;
-    top: 7rem; /* Adjust top spacing as needed */
-    left: 2rem; /* Adjust left spacing as needed */
+    top: 8.5rem;
+    left: 5rem;
     color: white;
-    font-size: 2.5rem; /* Adjust the font size as needed */
-    font-weight: bold;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   }
   
   .subheader {
+    font-family: "Lato", sans-serif;
     position: absolute;
-    top: 10.5rem; /* Adjust top spacing to position below the header */
-    left: 5rem; /* Align with the header text */
+    top: 12.5rem;
+    left: 11rem;
     color: white;
-    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   }
-
-  /* Navigation Bar Styles */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(3, 54, 73, 0.7); /* Semi-transparent background */
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Ensures it stays above other content */
-  }
   
-  .navbarContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Centering the navbar content */
-  }
-  
-  .navTitle {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navLinks a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .navLinks a:hover {
-    text-decoration: underline;
-  }
-
-/* Button Styles */
-.matchButton {
-    position: absolute; /* Ensure button is positioned relative to the container */
-    top: 14rem; /* Distance from the bottom */
-    left: 7rem; /* Distance from the left */
-    padding: 1rem 2rem;
+  .matchButton {
+    font-family: "Lato", sans-serif; 
+    
+    position: absolute; 
+    top: 16rem; 
+    left: 14rem; 
+    
+    padding: 1rem 2rem; 
     background-color: #c27440b3;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    font-size: 1.25rem;
-    cursor: pointer;
+    color: white; 
+    border: none; 
+    border-radius: 12px; 
+    font-size: 1.25rem; 
+    cursor: pointer; 
+    
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
+  /* Hover effect */
   .matchButton:hover {
-    background-color: #734B38;
+    background-color: #734b38; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
   }
+  
+  /* Active effect */
+  .matchButton:active {
+    background-color: #5c3a29; 
+    transform: scale(1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
