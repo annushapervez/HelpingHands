@@ -10,7 +10,7 @@ export default function NavBar() {
           <div className={styles.logoContainer}>
             <Image
               src="/images/dove.png" 
-              alt="HelpingHands Icon"
+              alt="HelpingHandsIcon"
               width={40} 
               height={40} 
               className={styles.logoIcon}
