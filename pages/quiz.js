@@ -45,24 +45,27 @@ export default function Quiz() {
     <div className={styles.container}>
       <Navbar /> {/* Use the Navbar component */}
       <main className={styles.main}>
-        <h1 className={styles.header}>Choose Your Interests</h1>
-        <form className={styles.quizForm} onSubmit={handleSubmit}>
-          <fieldset className={styles.fieldset}>
-            {categories.map((category) => (
-              <button
-                key={category}
-                type="button"
-                className={`${styles.optionButton} ${
-                  selectedCategories.includes(category) ? styles.selected : ''
-                }`}
-                onClick={() => handleCategoryClick(category)}
-              >
-                {category}
-              </button>
-            ))}
-          </fieldset>
-          <button type="submit" className={styles.submitButton}>Next</button>
-        </form>
+        {/* New Container for White Background */}
+        <div className={styles.quizBackground}>
+          <h1 className={styles.header}>Choose Your Interests</h1>
+          <form className={styles.quizForm} onSubmit={handleSubmit}>
+            <fieldset className={styles.fieldset}>
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  type="button"
+                  className={`${styles.optionButton} ${
+                    selectedCategories.includes(category) ? styles.selected : ''
+                  }`}
+                  onClick={() => handleCategoryClick(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </fieldset>
+            <button type="submit" className={styles.submitButton}>Next</button>
+          </form>
+        </div>
       </main>
     </div>
   );
